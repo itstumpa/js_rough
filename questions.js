@@ -86,8 +86,19 @@
 
 // Original: [1, 2, 3] Copy: [99, 2, 3]
 
-const arr1 = [1, 2, 3];
-for (let i = 0; i < arr1.length; i++) {
-     console.log(arr1)
+/* This output only shows remove and add */
+
+// let arr1 = [1, 2, 3];
+// let remove = arr1.shift();
+// let add = arr1.unshift(99);
+
+// for (let i = 0; i < arr1.length; i++) {
+//      console.log(arr1)
       
-}
+// }
+
+let original = [1, 2, 3];
+let copy = [99, ...original.slice(1)];
+
+console.log("Original :", original);
+console.log("Copy :", copy);

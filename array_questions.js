@@ -139,11 +139,11 @@ When you do arr[1][0] = 99; you’re replacing the 3 with 99.
 
 */
 
-let arr = [
-  [1, 2], [3, 4], [5, 6]
-];
+// let arr = [
+//   [1, 2], [3, 4], [5, 6]
+// ];
 
-for (let i = 0; i < arr.length; i++) {   
-     arr[1][0] = 99;
-}
-console.log(arr);
+// for (let i = 0; i < arr.length; i++) {   
+//      arr[1][0] = 99;
+// }
+// console.log(arr);

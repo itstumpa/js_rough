@@ -92,13 +92,58 @@
 // let remove = arr1.shift();
 // let add = arr1.unshift(99);
 
-// for (let i = 0; i < arr1.length; i++) {
-//      console.log(arr1)
-      
+// for (let i = 0; i < arr1.length; i++) { 
+// }
+// console.log(arr1)
+
+// its the answer
+// let original = [1, 2, 3];
+// let copy = [99, ...original.slice(1)];
+
+// console.log("Original :", original);
+// console.log("Copy :", copy);
+
+
+
+// Task 6
+// Given an array of student objects, print each student’s name and marks.
+
+// [
+//   { name: "John", marks: 85 },
+//   { name: "Alice", marks: 90 }
+// ]
+
+// let student = [
+//   { name: "John", marks: 85 },
+//   { name: "Alice", marks: 90 }
+// ]
+// for (const students of student) {
+//      console.log(students.name + " scored " + students.marks);
 // }
 
-let original = [1, 2, 3];
-let copy = [99, ...original.slice(1)];
 
-console.log("Original :", original);
-console.log("Copy :", copy);
+// Task 7
+// Given a 2D array, update the value at second row first item to 99 and print the updated array.
+
+/* For change specific number or string use for loop method
+
+arr[1] means the second sub-array (because indexing starts at 0), which is [3, 4].
+
+arr[1][0] means the first element inside that second sub-array. So:
+
+arr[1] → [3, 4]
+
+arr[1][0] → 3
+
+When you do arr[1][0] = 99; you’re replacing the 3 with 99.
+
+*/
+
+let arr = [
+  [1, 2], [3, 4], [5, 6]
+];
+
+for (let i = 0; i < arr.length; i++) {   
+     arr[1][0] = 99;
+}
+console.log(arr);

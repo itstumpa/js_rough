@@ -12,3 +12,10 @@ const goodStudent = students.find (student => student.marks > 80)
 
 
 console.log(goodStudent)
+
+
+
+
+const prop = "name";
+const user = { name: "Isha", country: "BD" };
+console.log(user[prop]);
